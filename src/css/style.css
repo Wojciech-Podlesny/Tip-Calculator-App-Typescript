@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: hsl(185, 41%, 84%);
+    gap: 4rem;
+    font-family: "Space Mono", monospace;
+}
+
+.title {
+    color: hsl(183, 100%, 15%);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    width: 700px;
+    border-radius: 1rem;
+}
+
+.card-container {
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.inputs-section,
+.outputs-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.outputs-section {
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.bill-section,
+.tip-section,
+.people-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.inputs-section {
+    gap: 2rem;
+}
+
+label {
+    color: hsl(183, 100%, 15%);
+    font-size: 14px;
+}
+
+.bill-input,
+.people-input {
+    position: relative;
+}
+
+.bill-input input,
+.people-input input {
+    width: 100%;
+    text-align: right;
+    padding: 0.5rem;
+    border: none;
+    font-size: 1.2rem;
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(189, 41%, 97%);
+    outline-color: hsl(172, 67%, 45%);
+}
+
+.bill-input img,
+.people-input img {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+}
+
+.tip-btns {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.tip-btns button {
+    width: 90px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(183, 100%, 15%);
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 7px;
+    font-size: 1.1rem;
+}
+
+.active {
+    background-color: hsl(172, 32%, 46%) !important;
+}
+
+
+.tip-btns button:hover {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+.tip-btns input {
+    width: 90px;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 7px;
+    outline-color: hsl(172, 67%, 45%);
+}
+
+.outputs-section {
+    gap: 2rem;
+}
+
+.tip-amount,
+.total-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tip-amount .amount,
+.total-section .total {
+    color: hsl(172, 67%, 45%);
+    font-size: 2rem;
+}
+
+.tip-amount p,
+.total p {
+    color: hsl(0, 0%, 100%);
+}
+
+.tip-amount span,
+.total span {
+    font-size: 12px;
+    color: hsl(184, 14%, 56%);
+}
+
+.reset-btn {
+    margin-top: auto;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    background-color: hsl(172, 67%, 45%);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: hsl(183, 100%, 15%);
+    opacity: 40%;
+}
+
+.reset-btn:hover {
+    opacity: 100%;
+}
+
+
+
+@media screen and (max-width: 750px) {
+    body {
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 2rem;
+        gap: 0;
+    }
+
+    .inputs-section,
+    .outputs-section {
+        width: 100%;
+    }
+
+
+    .card {
+        width: 100%;
+        margin-top: auto;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tip-btns {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .tip-btns div button {
+        width: 130px;
+    }
+
+    .tip-btns input {
+        width: 130px;
+    }
+
+    .tip-btns div {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
