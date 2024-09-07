@@ -48,6 +48,7 @@ Users should be able to:
 ### Links 
 
 - Solution URL: [My Solution URL](https://github.com/Wojciech-Podlesny/Tip-Calculator-App-Typescript)
+- Live Site URL: [Live Site URL](https://wojciech-podlesny.github.io/Tip-Calculator-App-Typescript/)
 
 ## My process 
 
